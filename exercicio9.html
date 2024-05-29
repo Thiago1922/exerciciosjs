@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          function quadrado(x)
+          {
+             document.write(x*x);
+
+          }
+           function cubo(x)
+           {
+            return x*x*x
+           }
+           y=5;
+           document.write("o quadrado de "+ y +" é igual a");
+           quadrado(y);
+
+    </script>
+<body>
+<form>
+     <br>informe um numero para saber seu valor ao cubo e, em seguida, pressione a tecla TAB ou dê um clique fora da caixa de texto.<br>
+     <input type="text" name="ao cubo" value="" onblur="alert('o cubo de '+ this.value+' é '+cubo(this.value))">
+
+
+
+
+
+</form>   
+</body>
+</html>

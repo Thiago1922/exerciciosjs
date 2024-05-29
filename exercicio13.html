@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function campo_obrigatorio (x)
+         {
+            if(x.value=="")
+            {
+              alert("o campo"+ x.name +" não pode ficar em branco.")
+            }
+         }
+                  
+    </script>
+<body>
+      nota: os campos marcados com asteriscos sao obrigatorios.<br><br>
+<form>
+     *nome completo: <input type="text" name="nome" value="" size="30" maxlength="30"
+     onblur="campo_obrigatorio(this)"><br>
+     idade:<input type="text" name="idade" value="" size=5 maxlength=5><br>
+     *cidade: <input type="text" name="cidade" value=""size=20 maxlength=20
+   onblur="campo_obrigatorio(this)"><br>
+     telefone:<input type="text" name="telefone" value=""size=15 maxlength="15"><br>
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<body>
+    <script>
+       function soma()
+       {
+        x= eva1(document.prova.c1.value)+eva1(document.prova.c2.value)+eva1(document.prova.c3.value);
+        document.prova.c4.value=x
+       }
+       function multiplica()
+       {
+       y=eva1(document.prova.c1.value)*eva1(document.prova.c2.value)*eva1(document.prova.c3.value);
+        document.prova.c4.value=y;
+      }
+    </script>
+    </head>
+<body>
+<form name="prova">
+      Entre com os valores nos campos e dê um clique nos botões.<br><br>
+      valor1: <input type="text" name="c1" value="" size="5" maxlength="5"><br>
+      valor2: <input type="text" name="c2" value="" size="5" maxlength="5"><br>
+      valor3: <input type="text" name="c3" value="" size="5" maxlength="5"><br><br>
+
+
+      <input type="button" value="Somar" onclick="soma()">
+      <input type="button" value="Multiplica" onclick="Multiplica()">
+      <br><br>
+      Resposta: <input type="text"  name="c4" value="" size="10" maxlength="0">
+
+
+
+
+
+
+
+
+</form>
+</body>
+</html>
